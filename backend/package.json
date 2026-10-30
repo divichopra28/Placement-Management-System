@@ -1,0 +1,26 @@
+{
+  "name": "placement-backend",
+  "version": "1.0.0",
+  "description": "Express + Oracle REST API for the Placement Management System",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check-db": "node scripts/checkDb.js",
+    "create-account": "node scripts/createAccount.js",
+    "seed-accounts": "node scripts/seedAccounts.js",
+    "test:flow": "node scripts/flowTest.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.0",
+    "oracledb": "^6.7.0"
+  }
+}
